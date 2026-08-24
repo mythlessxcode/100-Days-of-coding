@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.box{
+  width: 300px;          /* fixed width */
+  max-width: 90vw;      /* responsive on small screens */
+  height: 380px;        /* fixed height */
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-flow: initial;
+  gap: 10px;
+  text-decoration-color: #0f172a;
+}
+
+.text{
+   padding-left: 10px;
+   display: flex;
+}
+
+.container{
+   margin:10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   border-radius: 10px;
+   flex-direction: column;
+   gap: calc(20px);
+}

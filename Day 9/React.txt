@@ -1,0 +1,57 @@
+1.Why we need React?=> for dynamic websites, these lib make it easier to do DOM manipulation.
+2. 
+
+
+
+//Hooks
+
+useEffect :- it is used to render the DOM when lifecycle events (mounting, unmounting, rerendering ) happen.
+
+useEffect is a React hook that lets you perform side effects in functional components. Side effects are actions like:
+
+Fetching data from an API
+Setting up subscriptions
+Updating the DOM
+Setting timers/intervals
+Basic Syntax:
+
+
+useEffect(() => {  // Side effect code here  return () => {    // Cleanup code (optional)  };}, [dependencies]);
+Parameters:
+
+Callback function: Contains the side effect code
+Dependency array (optional):
+Empty [] - runs once after component mounts
+With values [var1, var2] - runs when those values change
+Omitted - runs after every render (not recommended)
+Example:
+
+
+import { useEffect, useState } from 'react';function App() {  const [count, setCount] = useState(0);  useEffect(() => {    console.log('Component mounted or count changed');        return () => {      console.log('Cleanup before unmount or re-run');    };  }, [count]); // Runs when count changes  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;}
+Key Points:
+
+Runs after the component renders
+Use return function for cleanup (unsubscribe, clear timers, etc.)
+Each component can have multiple useEffect hooks
+C
+
+import { useEffect, useState } from 'react';
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log('Component mounted or count changed');
+    
+    return () => {
+      console.log('Cleanup before unmount or re-run');
+    };
+  }, [count]); // Runs when count changes
+
+  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
+}
+
+write way to write react
+
+structuring your app into components
+// Defining a state of your application

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon cards</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            background: #333;
+            
+        }
+
+        .main{
+             padding: 10px;
+            margin: 2rem;
+         
+            
+        }
+
+        .input-bar{
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+            background: whitesmoke;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card{
+            width: 130px;
+            height: 215px;
+            background: #bcbcbb;
+            margin-top: 10px;
+            border-radius: 10px;
+             }
+             
+             .pic{
+                width:120px;
+                height: 180px;
+                overflow: hidden;
+                border-radius: 10px;
+                margin-left: 5px;
+                margin-top: 5px;
+                }
+
+        .data{
+            background: rgb(44, 44, 44);
+            margin-top: -15px; 
+            text-align: center;
+            width: 120px;
+            margin-left: 5px;
+            border-radius: 5px;
+            }
+
+        .para{
+            color: rgb(238, 250, 78);
+        } 
+        .cardsContainer{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="main">
+<div class="input-bar">
+    
+<form action="">
+    <input type="number" placeholder="Enter no. of cards">
+    <select id="typeSelect">
+        <option value="">Select type</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="electric">Electric</option>
+        <option value="grass">Grass</option>
+    </select>
+    <button type="submit" id="button">Generate</button>
+    
+</form>
+<div class="cardsContainer">
+
+</div>
+</div>
+
+</div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* 1. Global Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#parent{
+ background: #d662f9;
+ height: 16rem;
+ width: 16rem;
+ display: flex;
+ padding: 5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bg
+    
+}
+
+#button{
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 10%;
+}
